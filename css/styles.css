@@ -1,0 +1,186 @@
+html {
+  height: 100%;
+  margin: 0px;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo-container,
+.hero-section-container,
+.information-container,
+.quote-container,
+.inner-quote-container,
+.footer-container,
+.header-links,
+.content,
+.test,
+.information{
+  display: flex;
+}
+
+.hero-section-container,
+.information-container,
+.quote-container,
+.call-to-action {
+  flex: auto;
+}
+
+.header-logo-container,
+.footer-container {
+  height: 50px;
+}
+
+.header-logo-container,
+.hero-section-container{
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+  align-items: center;
+}
+
+.header-logo-container,
+.hero-section-container,
+.footer-container {
+  background: #1F2937;
+}
+
+.header-logo,
+a,
+.content-header,
+.call-to-action,
+.footer-container{
+  color: #F9FAF8;
+  font-family: Roboto;
+}
+
+.header-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-links {
+  list-style: None;
+  gap: 15px;
+}
+
+a {
+  text-decoration: None;
+}
+
+.content {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 35%;
+}
+
+.content-header {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.content-body {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.sign-up-button,
+.call-to-action-body,
+.call-to-action-body-button{
+  background: #3882F6;
+}
+
+img {
+  border-radius: 5px;
+}
+
+button {
+  width: 100px;
+  height: 25px;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+}
+
+.information-container {
+  align-items: center;
+  flex-direction: column;
+}
+
+.information-heading {
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900;
+}
+
+.information {
+  gap: 20px;
+  text-align: center;
+  p {
+    width: 140px;
+    color: #1F2937;
+    padding-left: 10px;
+  }
+  img {
+    border: 3.5px solid #3882F6;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.quote-container {
+  background: #E5E7EB;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-quote-container {
+  flex-direction: column;
+  width: 75%;
+  .quote-author {
+    align-self: flex-end;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .quote {
+    font-size: 36px;
+    font-weight: 300;
+  }
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .call-to-action-body {
+    display:flex;
+    height: 100px;
+    width: 800px;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: space-around;
+    .call-to-action-body-content{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      .call-to-action-body-header{
+        font-weight: 900;
+        font-size: 18px;
+      }
+    }
+    .call-to-action-body-button{
+      border: 1.5px solid white;
+      align-self: center;
+    }
+  }
+}
+
+.footer-container {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
